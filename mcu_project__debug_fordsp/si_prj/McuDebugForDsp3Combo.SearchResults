@@ -1,0 +1,9 @@
+---- g_tec_ctrl_temperautre_obj Matches (8 in 3 files) ----
+Tec_comm.c (d:\e\code\版本代码\调试版本--dsp方案\mcu_project__debug_fordsp\tec_control):	g_tec_vars_param.g_tec_ctrl_temperautre_obj = 5000;
+Tec_comm.c (d:\e\code\版本代码\调试版本--dsp方案\mcu_project__debug_fordsp\tec_control):TEC_TEMP_OBJ换成uin32_t g_tec_ctrl_temperautre_obj,则温度锁定就不准确
+Tec_comm.c (d:\e\code\版本代码\调试版本--dsp方案\mcu_project__debug_fordsp\tec_control):	g_tec_vars_param.g_tec_ctrl_temperautre_obj = value;
+Tec_data_type.h (d:\e\code\版本代码\调试版本--dsp方案\mcu_project__debug_fordsp\tec_control):	uint16_t g_tec_ctrl_temperautre_obj;
+Tec_data_type.h (d:\e\code\版本代码\调试版本--dsp方案\mcu_project__debug_fordsp\tec_control):#define TEC_TEMP_OBJ				g_tec_vars_param.g_tec_ctrl_temperautre_obj//5000 
+Tec_i2c_interface.c (d:\e\code\版本代码\调试版本--dsp方案\mcu_project__debug_fordsp\tec_control):	g_tec_vars_param.g_tec_ctrl_temperautre_obj &= 0;
+Tec_i2c_interface.c (d:\e\code\版本代码\调试版本--dsp方案\mcu_project__debug_fordsp\tec_control):	g_tec_vars_param.g_tec_ctrl_temperautre_obj |= get_u16(&pbuff[1]);
+Tec_i2c_interface.c (d:\e\code\版本代码\调试版本--dsp方案\mcu_project__debug_fordsp\tec_control):	tec_save_ctl_temperature_value(g_tec_vars_param.g_tec_ctrl_temperautre_obj);
