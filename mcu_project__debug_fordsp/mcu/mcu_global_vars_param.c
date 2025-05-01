@@ -26,7 +26,9 @@ volatile  GLOBAL_VARS_PARAM g_mcu_vars_param;
 *****************************************************************************/
 void global_vars_param_init()
 {	
+	uint8_t test = 0;
 	/* add by fz, 20250225, 原因:默认是不升极 */
+	
 	g_mcu_vars_param.g_update_process_flag = RESET;
 	g_mcu_vars_param.g_50g_ddm_sw_auto_process_flag = RESET;
 	g_mcu_vars_param.g_10g_ddm_sw_auto_process_flag = RESET;

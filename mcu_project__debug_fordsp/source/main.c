@@ -247,7 +247,7 @@ int main(void)
     /* delete by fangzhe, 20250321, 原因:只用系统时钟 */
 	//timer_process_init();
 
-    /*i2c注册接口*/
+    /*i2c注册接口***/
 	i2c_cmd_register_init();
 
     /*flash配置初始化*/
